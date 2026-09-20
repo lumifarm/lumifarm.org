@@ -86,12 +86,16 @@ body > .main-menu {
     border-bottom: 3px solid var(--color-sun) !important;
 }
 
-body > .main-menu a,
-body > .main-menu .bf-icon-color-hover {
+/* 只選桌機版選單容器（.hidden.md:flex）裡的連結上白字。
+   手機版全螢幕選單雖然在 DOM 上也是 .main-menu 的子孫，但它是
+   position:fixed 疊在全螢幕上的獨立彈窗、背景是米白色，
+   如果選到它就會變成白字疊白底、完全看不見，所以要排除掉。 */
+body > .main-menu .hidden.md\:flex a,
+body > .main-menu .hidden.md\:flex .bf-icon-color-hover {
     color: #fffdf7 !important;
 }
 
-body > .main-menu a:hover {
+body > .main-menu .hidden.md\:flex a:hover {
     color: var(--color-sun) !important;
 }
 
