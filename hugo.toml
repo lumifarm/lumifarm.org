@@ -65,8 +65,8 @@ theme = 'blowfish'
     weight = 15
 
   [[menu.main]]
-    name = "光農碳積分"
-    pageRef = "/community"
+    name = "活動報名"
+    url = "https://lumifarm.github.io/lumifarm-event-checkin/"
     weight = 20
 
   [[menu.main]]
