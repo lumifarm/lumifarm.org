@@ -86,6 +86,11 @@ theme = 'blowfish'
     weight = 30
 
   [[menu.main]]
+    name = "食農新日常"
+    url = "https://lumifarm.github.io/lumifarm-coop-game/"
+    weight = 35
+
+  [[menu.main]]
     name = "支持我們"
     pageRef = "/support"
     weight = 40

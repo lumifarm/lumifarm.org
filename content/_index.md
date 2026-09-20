@@ -82,6 +82,15 @@ cascade:
 
 </div>
 
+<div style="max-width: 1000px; margin: 0 auto 4rem auto; border-radius: 24px; overflow: hidden; position: relative; background: linear-gradient(120deg, var(--color-leaf-dark) 0%, var(--color-leaf) 55%, var(--color-sun) 130%); box-shadow: 0 8px 24px rgba(31, 77, 43, 0.25); padding: 2.5rem 2rem; text-align: center;">
+  <div style="font-size: 0.9rem; font-weight: bold; letter-spacing: 0.1em; color: #fffdf7; opacity: 0.85; margin-bottom: 0.75rem;">🎮 線上小遊戲</div>
+  <h2 style="color: #fffdf7; font-size: 1.8rem; margin: 0 0 1rem 0; padding-bottom: 0;">食農新日常：從產地到餐桌的農業經濟民主之路</h2>
+  <p style="color: #fffdf7; opacity: 0.95; font-size: 1.05rem; line-height: 1.8; max-width: 640px; margin: 0 auto 1.5rem auto;">完全不了解合作社也能玩！扮演生產者＋消費者合作社的發起人，在「結識夥伴 → 共同採購 → 共同銷售 → 共同信貸整合」四個階段中做抉擇，體會合作社怎麼經營、民主治理怎麼落實，又通常怎麼失敗。</p>
+  <a href="https://lumifarm.github.io/lumifarm-coop-game/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #fffdf7; color: var(--color-leaf-dark); padding: 12px 32px; border-radius: 99px; text-decoration: none; font-weight: bold; font-size: 1.05rem; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 14px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+    立即開始遊戲 →
+  </a>
+</div>
+
 ---
 
 ## 📱 社群動態精選
