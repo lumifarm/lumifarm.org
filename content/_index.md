@@ -84,6 +84,12 @@ cascade:
 
 ---
 
+## 🌾 活動成果紀實
+<p style="opacity: 0.8; margin-bottom: 2rem; max-width: 700px;">走進田間、辦過的工作坊與行動，都留下了真實的足跡。</p>
+{{< records_highlights >}}
+
+---
+
 ## 📢 光農電子報精選
 <p style="opacity: 0.8; margin-bottom: 2rem; max-width: 700px;">我們最深入的觀察、田野紀錄與農法轉譯，都寫在 Substack 電子報裡。</p>
 {{< substack_latest >}}
