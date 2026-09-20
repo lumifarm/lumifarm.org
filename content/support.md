@@ -10,26 +10,26 @@ title: "支持光農：讓永續在土地紮根"
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 2rem; margin-bottom: 3rem;">
 
-  <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 24px; border: 1.5px solid #00c300; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+  <div class="natural-card" style="padding: 30px; border-radius: 24px; border: 1.5px solid #00c300; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
     <div>
       <h3 style="color: #00c300; margin-top: 0; font-size: 1.5rem;">🟢 LINE Pay 快速支持</h3>
       <p style="font-size: 0.95rem; opacity: 0.8; margin-bottom: 1.5rem;">適合小額贊助，支援信用卡與 iPASS Money</p>
-      <div style="background: white; padding: 15px; border-radius: 16px; width: 220px; margin: 0 auto; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+      <div style="background: white; padding: 15px; border-radius: 16px; width: 220px; margin: 0 auto; box-shadow: 0 10px 20px rgba(63,50,38,0.2);">
         <img src="/images/linepay-qr.png" alt="LINE Pay QR Code" style="width: 100%; display: block;">
       </div>
     </div>
     <p style="font-size: 0.85rem; margin-top: 1.5rem; opacity: 0.7;">手機端請長按圖片儲存，再開啟 LINE Pay 掃描</p>
   </div>
 
-  <div style="background: rgba(255,255,255,0.05); padding: 30px; border-radius: 24px; border: 1.5px solid rgba(255,255,255,0.15); text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+  <div class="natural-card" style="padding: 30px; border-radius: 24px; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
     <div>
-      <h3 style="color: #4ade80; margin-top: 0; font-size: 1.5rem;">🏦 銀行轉帳</h3>
+      <h3 style="color: var(--color-leaf); margin-top: 0; font-size: 1.5rem;">🏦 銀行轉帳</h3>
       <p style="font-size: 0.95rem; opacity: 0.8; margin-bottom: 1.5rem;">免手續費，適合大額支持或定期資助</p>
-      <div style="text-align: left; background: rgba(0,0,0,0.3); padding: 20px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; line-height: 1.8; border: 1px dashed rgba(255,255,255,0.2);">
-        <span style="color: #4ade80;">銀行：</span><strong>[永豐銀行]</strong><br>
-        <span style="color: #4ade80;">代碼：</span><strong>[807]</strong><br>
-        <span style="color: #4ade80;">帳號：</span><strong>[20301800119518]</strong><br>
-        <span style="color: #4ade80;">戶名：</span><strong>[林奕衡]</strong>
+      <div style="text-align: left; background: var(--color-cream); padding: 20px; border-radius: 16px; font-family: 'Courier New', Courier, monospace; line-height: 1.8; border: 1px dashed var(--color-bark-light);">
+        <span style="color: var(--color-leaf);">銀行：</span><strong>[永豐銀行]</strong><br>
+        <span style="color: var(--color-leaf);">代碼：</span><strong>[807]</strong><br>
+        <span style="color: var(--color-leaf);">帳號：</span><strong>[20301800119518]</strong><br>
+        <span style="color: var(--color-leaf);">戶名：</span><strong>[林奕衡]</strong>
       </div>
     </div>
     <p style="font-size: 0.85rem; margin-top: 1.5rem; opacity: 0.7;">轉帳後請來信(info@lumifarm.org)告知帳號末五碼，以便我們寄送感謝信。</p>

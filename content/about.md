@@ -17,18 +17,18 @@ title: 關於我們
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
   
-  <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-    <h3 style="margin-top: 0; color: #4ade80;">🌱 永續農耕實踐</h3>
+  <div class="natural-card" style="padding: 20px; border-radius: 12px;">
+    <h3 style="margin-top: 0; color: var(--color-leaf);">🌱 永續農耕實踐</h3>
     <p>在我們的樸爪農場與其他實踐基地，我們親手將理論化為泥土裡的真實，建立可持續的糧食來源，並提供現場的實作學習機會。</p>
   </div>
 
-  <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-    <h3 style="margin-top: 0; color: #4ade80;">🤝 社群參與式農業</h3>
+  <div class="natural-card" style="padding: 20px; border-radius: 12px;">
+    <h3 style="margin-top: 0; color: var(--color-leaf);">🤝 社群參與式農業</h3>
     <p>從田間設計、耕作到成果分享，每一位青年與居民都是行動的共同設計者。透過「農務共食日」等活動，找回人與土地最真實的連結。</p>
   </div>
 
-  <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-    <h3 style="margin-top: 0; color: #4ade80;">🌍 知識開放與國際連結</h3>
+  <div class="natural-card" style="padding: 20px; border-radius: 12px;">
+    <h3 style="margin-top: 0; color: var(--color-leaf);">🌍 知識開放與國際連結</h3>
     <p>我們積極轉譯國際永續農業的最新知識，並將其系統化整理，無償提供給所有有志於友善農耕的實踐者。</p>
   </div>
 

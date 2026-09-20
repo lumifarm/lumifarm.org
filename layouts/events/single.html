@@ -2,19 +2,19 @@
 <div style="max-width: 800px; margin: 0 auto; padding: 2rem 1rem;">
   
   <header style="text-align: center; margin-bottom: 3rem;">
-    <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem; color: #4ade80;">{{ .Title }}</h1>
-    <div style="font-size: 1.2rem; color: #a3a3a3; background: rgba(255,255,255,0.05); display: inline-block; padding: 8px 24px; border-radius: 99px;">
+    <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem; color: var(--color-leaf);">{{ .Title }}</h1>
+    <div style="font-size: 1.2rem; color: var(--color-soil); background: var(--color-bark-light); display: inline-block; padding: 8px 24px; border-radius: 99px;">
       📅 活動日期：{{ .Date.Format "2006 年 01 月 02 日" }}
     </div>
   </header>
 
-  <div class="prose dark:prose-invert" style="max-width: 100%; font-size: 1.1rem; line-height: 1.8; margin-bottom: 3rem;">
+  <div class="prose" style="max-width: 100%; font-size: 1.1rem; line-height: 1.8; margin-bottom: 3rem;">
     {{ .Content }}
   </div>
 
   {{ if .Params.link }}
   <div style="text-align: center; margin-top: 4rem; margin-bottom: 4rem;">
-    <a href="{{ .Params.link }}" target="_blank" rel="noopener noreferrer" style="background-color: #059669; color: white; padding: 16px 40px; border-radius: 99px; text-decoration: none; font-weight: bold; font-size: 1.25rem; transition: opacity 0.2s; box-shadow: 0 4px 15px rgba(5, 150, 105, 0.4);" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+    <a href="{{ .Params.link }}" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #379654, var(--color-leaf-dark)); color: #fffdf7; padding: 16px 40px; border-radius: 99px; text-decoration: none; font-weight: bold; font-size: 1.25rem; transition: all 0.2s; box-shadow: 0 2px 8px rgba(47, 107, 62, 0.35);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 14px rgba(238, 162, 58, 0.45)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(47, 107, 62, 0.35)';">
       👉 點我前往報名頁面
     </a>
   </div>

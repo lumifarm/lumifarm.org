@@ -7,7 +7,7 @@ cascade:
 ---
 
 <div style="width: 100%; max-width: 1000px; margin: 2rem auto 3rem auto; text-align: center;">
-  <img src="/images/hero.webp" alt="光農合作社群主視覺" width="1000" height="500" fetchpriority="high" style="width: 100%; max-height: 500px; object-fit: cover; border-radius: 16px; box-shadow: 0 10px 30px rgba(63,50,38,0.25);" class="medium-zoom-image">
+  <img src="/images/hero-field-day.jpg" alt="光農合作社群夥伴在田間合影" width="2000" height="1125" fetchpriority="high" style="width: 100%; max-height: 500px; object-fit: cover; border-radius: 16px; box-shadow: 0 10px 30px rgba(63,50,38,0.25);" class="medium-zoom-image">
 </div>
 
 <div style="text-align: center; max-width: 800px; margin: 0 auto 6rem auto; color: var(--color-soil);">
@@ -81,12 +81,6 @@ cascade:
   </div>
 
 </div>
-
----
-
-## 🌾 活動成果紀實
-<p style="opacity: 0.85; margin-bottom: 2rem; max-width: 700px;">走進田間、辦過的工作坊與行動，都留下了真實的足跡。</p>
-{{< records_highlights >}}
 
 ---
 
