@@ -100,3 +100,11 @@ theme = 'blowfish'
   [services]
   [services.googleAnalytics]
     id = "G-M7RC0129X5"
+
+# ==========================================
+# 允許建置時抓取 Substack RSS（首頁「光農電子報」精選用）
+# ==========================================
+[security]
+  [security.http]
+    methods = ['GET']
+    urls = ['^https://lumifarm\.substack\.com/.*']

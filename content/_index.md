@@ -84,8 +84,9 @@ cascade:
 
 ---
 
-## 📢 光農快訊
-{{< recent_articles >}}
+## 📢 光農電子報精選
+<p style="opacity: 0.8; margin-bottom: 2rem; max-width: 700px;">我們最深入的觀察、田野紀錄與農法轉譯，都寫在 Substack 電子報裡。</p>
+{{< substack_latest >}}
 
 ---
 
