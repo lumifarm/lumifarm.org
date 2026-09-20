@@ -1,0 +1,23 @@
+{{ $posts := slice
+  "https://www.instagram.com/luminous.farmers.network/p/DdMJ_cCm3rx/"
+  "https://www.instagram.com/luminous.farmers.network/p/DcqC-oUE4es/"
+  "https://www.instagram.com/luminous.farmers.network/p/DcikEPwTNTw/"
+}}
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 2rem; align-items: start;">
+  {{ range $posts }}
+  <blockquote
+    class="instagram-media natural-card"
+    data-instgrm-permalink="{{ . }}"
+    data-instgrm-version="14"
+    style="border-radius: 16px; margin: 0; width: 100%; min-width: 280px;">
+  </blockquote>
+  {{ end }}
+</div>
+
+<div style="text-align: center; margin-bottom: 3rem;">
+ <a href="https://www.instagram.com/luminous.farmers.network" target="_blank" rel="noopener noreferrer" style="display: inline-block; border: 1px solid var(--color-bark-light); color: var(--color-soil); padding: 10px 28px; border-radius: 99px; text-decoration: none; font-size: 1rem; transition: all 0.3s;" onmouseover="this.style.backgroundColor='rgba(138,99,57,0.08)';" onmouseout="this.style.backgroundColor='transparent';">
+  追蹤我們的 Instagram ➔
+ </a>
+</div>
+
+<script async src="//www.instagram.com/embed.js"></script>

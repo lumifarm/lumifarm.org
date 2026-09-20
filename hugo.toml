@@ -9,8 +9,9 @@ theme = 'blowfish'
   home = ["HTML", "RSS", "JSON"]
 
 [params]
-  defaultAppearance = "dark"
+  defaultAppearance = "light"
   disableThemeToggle = true
+  autoSwitchAppearance = false
   logo = "logo.webp"
   
   # 👇 把它放在這裡！這才是 Blowfish 真正認得的護身符！

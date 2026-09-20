@@ -1,81 +1,140 @@
 /* ==========================================
-   1. 首頁與標題優化
+   0. 自然風配色系統（跟活動報名系統 lumifarm-event-checkin 同一套 token）
+   木頭棕、葉綠、陽光暖黃、米白，取代原本偏冷的深色森林照片底
    ========================================== */
-.hero-header h1, .hero-header p {
-    color: #ffffff !important; /* 強制純白 */
-    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8); /* 增加黑色陰影墊底 */
-    font-weight: 600; /* 加粗一點點 */
-}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap");
 
-.home-recent-posts h2, .home-recent-posts a {
-    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+:root {
+    --color-soil: #3f3226;
+    --color-bark: #8a6339;
+    --color-bark-light: #e2d2b3;
+    --color-leaf: #2f6b3e;
+    --color-leaf-dark: #1f4d2b;
+    --color-sun: #eea23a;
+    --color-cream: #faf3e2;
+    --color-card: #fffdf7;
 }
 
 /* ==========================================
-   2. 全站森林背景與主題切換按鈕隱藏
+   1. 全站字體與標題
+   ========================================== */
+body {
+    font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif !important;
+    color: var(--color-soil) !important;
+}
+
+/* Tailwind 的 .prose 排版套件會在自己身上重新設定文字顏色，
+   單靠 body 的顏色（繼承）蓋不過去，必須直接蓋 .prose 本身。
+   刻意不加 !important：這樣文章內任何用 inline style 指定顏色的
+   元素（例如卡片標題用葉綠色）還是能正常蓋過這裡的預設值。 */
+.prose,
+.prose p,
+.prose li {
+    color: var(--color-soil);
+}
+
+h1, h2, h3, .article-title, header h1 {
+    font-family: "Noto Serif TC", "Noto Sans TC", serif !important;
+    color: var(--color-soil);
+    line-height: 1.4 !important;
+    padding-bottom: 0.5rem;
+}
+
+/* 首頁 Hero 區塊：改成深色文字配柔和陰影，不再是白字配黑底 */
+.hero-header h1, .hero-header p {
+    color: var(--color-soil) !important;
+    text-shadow: none;
+    font-weight: 600;
+}
+
+.home-recent-posts h2, .home-recent-posts a {
+    text-shadow: none;
+}
+
+/* ==========================================
+   2. 全站米白底 + 陽光灑落漸層，取代原本的暗色森林照片
    ========================================== */
 html, body {
-    background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), 
-                      url('/images/food-forest-bg.png') !important;
-    background-size: cover !important;
+    background-color: var(--color-cream) !important;
+    background-image: radial-gradient(circle at 10% 10%, rgba(238, 162, 58, 0.16) 0, transparent 40%),
+        radial-gradient(circle at 90% 6%, rgba(47, 107, 62, 0.14) 0, transparent 36%),
+        radial-gradient(circle at 50% 100%, rgba(138, 99, 57, 0.12) 0, transparent 45%) !important;
     background-attachment: fixed !important;
-    background-position: center !important;
+    background-size: cover !important;
 }
 
 button[id^="appearance-switcher"], .theme-toggle {
-    display: none !important; /* 雙重保險：隱藏右上角切換鈕 */
+    display: none !important; /* 固定亮色主題，不需要切換鈕 */
 }
 
-/* 確保亮色模式被觸發時，依舊保持暗色系與透明背景 */
-body.light-mode {
-    color: #cbd5e1 !important;
-}
-body.light-mode header,
-body.light-mode footer,
-body.light-mode main {
+body header,
+body footer,
+body main {
     background-color: transparent !important;
 }
 
 /* ==========================================
-   3. 導覽列「支持我們」按鈕優化
+   3. 導覽列：深綠漸層圓角橫條 + 陽光色底邊線，跟報名系統的深綠 nav 一致
+   ========================================== */
+body > .main-menu {
+    background: linear-gradient(135deg, var(--color-leaf) 0%, var(--color-leaf-dark) 100%) !important;
+    border-radius: 9999px !important;
+    padding: 0.6rem 1.5rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 0.5rem !important;
+    box-shadow: 0 4px 15px rgba(31, 77, 43, 0.3) !important;
+    border-bottom: 3px solid var(--color-sun) !important;
+}
+
+body > .main-menu a,
+body > .main-menu .bf-icon-color-hover {
+    color: #fffdf7 !important;
+}
+
+body > .main-menu a:hover {
+    color: var(--color-sun) !important;
+}
+
+/* ==========================================
+   3-1. 導覽列「支持我們」按鈕：陽光橘實心膠囊，跟報名系統的按鈕手感一致
    ========================================== */
 header a[href*="/support"] {
-    background-color: #059669 !important; /* 光農綠色 */
-    color: #ffffff !important; /* 純白文字 */
-    padding: 0.4rem 1.2rem !important; /* 撐開按鈕空間 */
-    border-radius: 99px !important; /* 橢圓形膠囊狀 */
-    font-weight: 700 !important; /* 字體加粗 */
-    box-shadow: 0 4px 10px rgba(5, 150, 105, 0.3) !important;
+    background: var(--color-sun) !important;
+    color: var(--color-leaf-dark) !important;
+    padding: 0.4rem 1.2rem !important;
+    border-radius: 99px !important;
+    font-weight: 700 !important;
+    box-shadow: 0 2px 8px rgba(238, 162, 58, 0.4) !important;
     transition: all 0.2s ease-in-out !important;
 }
 
 header a[href*="/support"]:hover {
     transform: translateY(-2px) !important;
-    opacity: 0.9 !important;
+    box-shadow: 0 4px 14px rgba(238, 162, 58, 0.55) !important;
 }
 
 /* ==========================================
-   3-1. 導覽列「活動報名」按鈕優化（主要行動，用醒目綠色實心按鈕凸顯）
+   3-2. 導覽列「活動報名」按鈕：漸層綠膠囊，對應報名系統的 .btn-primary
    ========================================== */
 header a[href*="lumifarm-event-checkin"] {
-    background-color: #16a34a !important; /* 醒目綠，與月曆的活動標記色一致 */
-    color: #ffffff !important;
+    background: linear-gradient(135deg, #379654, var(--color-leaf-dark)) !important;
+    color: #fffdf7 !important;
     padding: 0.4rem 1.2rem !important;
     border-radius: 99px !important;
     font-weight: 700 !important;
-    box-shadow: 0 4px 10px rgba(22, 163, 74, 0.35) !important;
+    box-shadow: 0 2px 8px rgba(47, 107, 62, 0.35) !important;
     transition: all 0.2s ease-in-out !important;
 }
 
 header a[href*="lumifarm-event-checkin"]:hover {
+    background: linear-gradient(135deg, #45ab63, #276b3a) !important;
+    box-shadow: 0 4px 14px rgba(238, 162, 58, 0.45) !important;
     transform: translateY(-2px) !important;
-    opacity: 0.9 !important;
 }
 
 /* ==========================================
-   4. 終極移除：消滅文章中間的黑色區塊
+   4. 文章與卡片：米白底、淡木框、暖色陰影，取代原本的透明/深色區塊
    ========================================== */
-/* 這裡使用了精準的 Tailwind 轉義符號，強制擊碎所有 Blowfish 預設的底色 */
 article,
 article.prose,
 .dark\:bg-neutral-800,
@@ -91,43 +150,48 @@ article.prose,
     box-shadow: none !important;
 }
 
+.natural-card {
+    background-color: var(--color-card) !important;
+    border: 1px solid var(--color-bark-light) !important;
+    box-shadow: 0 3px 12px rgba(138, 99, 57, 0.14) !important;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.natural-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(138, 99, 57, 0.2) !important;
+}
+
 /* ==========================================
-   5. Tally 表單輸入框質感優化
+   5. 表單輸入框：亮色質感（原本是深色霧面，配合新的米白底反過來）
    ========================================== */
 iframe[title="志工報名表"], iframe[title="活動報名表"] {
     background-color: transparent !important;
 }
 
-/* 這段需要 unsafe = true 權限才能生效 */
 @media screen and (min-width: 0) {
     [data-tally-input-group] input,
     [data-tally-input-group] select,
     [data-tally-input-group] textarea {
-        background-color: rgba(255, 255, 255, 0.08) !important; /* 暗灰霧面背景 */
-        color: #ffffff !important; /* 純白文字 */
-        border: 1px solid rgba(255, 255, 255, 0.1) !important; /* 細微的白色邊框 */
+        background-color: #ffffff !important;
+        color: var(--color-soil) !important;
+        border: 1px solid var(--color-bark-light) !important;
         border-radius: 8px !important;
     }
 
     [data-tally-input-group] input:focus,
     [data-tally-input-group] textarea:focus {
-        border-color: #059669 !important; /* 聚焦時顯示光農綠 */
-        box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.2) !important;
+        border-color: var(--color-leaf) !important;
+        box-shadow: 0 0 0 2px rgba(47, 107, 62, 0.2) !important;
     }
 }
+
 /* ==========================================
    導覽列排版優化：防止文字斷行
    ========================================== */
 header nav ul li a {
-    font-size: 0.95rem !important; /* 稍微縮小字體 */
-    padding-left: 0.5rem !important; /* 減少左右間距 */
+    font-size: 0.95rem !important;
+    padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
-    white-space: nowrap !important; /* 強制不換行！ */
-}
-/* ==========================================
-   文章與活動標題排版優化：防止多行文字重疊
-   ========================================== */
-h1, .article-title, header h1 {
-    line-height: 1.4 !important; /* 👉 加大行高，讓多行文字有舒適的間距 */
-    padding-bottom: 0.5rem;      /* 👉 稍微增加標題底部的空間 */
+    white-space: nowrap !important;
 }
