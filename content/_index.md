@@ -11,7 +11,15 @@ cascade:
 </div>
 
 <div style="text-align: center; max-width: 800px; margin: 0 auto 6rem auto; color: white;">
-  
+
+  <div style="margin-bottom: 2.5rem; text-shadow: 0 1px 3px rgba(0,0,0,0.8);">
+    <p style="font-size: 1.3rem; line-height: 2; font-weight: 600;">
+      🌱 <strong>我們是誰：</strong>光農合作社群，是一群關心土地與食物未來的青農、志工與消費者組成的行動社群。<br>
+      🤝 <strong>我們在做什麼：</strong>用工作坊、農務體驗與共食活動，把永續農法變成人人都能參與的日常。<br>
+      👉 <strong>你可以怎麼開始：</strong>從一場近期活動報名開始，實際走進田間認識我們。
+    </p>
+  </div>
+
   <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2.5rem; text-shadow: 0 1px 3px rgba(0,0,0,0.8);">
     我們是一個致力於推廣永續農耕與生態共生的合作社群。以樸爪農園為實驗基地，我們透過開放的知識共享與實地農務參與，邀請大家在泥土中找回生活的節奏，重新建立人與土地的深厚連結。
   </p>
@@ -21,7 +29,10 @@ cascade:
     <p style="font-size: 1.15rem;"><strong>我們的願景：</strong>創造一個充滿生機、資源共享的生態圈，讓每一片土地都能重獲生機，並激發人類與自然和諧共存的無限可能。</p>
   </div>
 
-  <div style="margin-bottom: 3rem;">
+  <div style="margin-bottom: 3rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+    <a href="/events/" style="display: inline-block; background-color: #16a34a; color: white; padding: 14px 36px; border-radius: 99px; text-decoration: none; font-weight: bold; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4); transition: all 0.3s;" onmouseover="this.style.opacity='0.85'; this.style.transform='translateY(-2px)';" onmouseout="this.style.opacity='1'; this.style.transform='translateY(0)';">
+      查看近期活動並報名
+    </a>
     <a href="/about" style="display: inline-block; border: 2px solid white; color: white; padding: 12px 36px; border-radius: 99px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: all 0.3s;" onmouseover="this.style.backgroundColor='white'; this.style.color='#0f172a';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white';">
       深入了解
     </a>

@@ -55,6 +55,24 @@ header a[href*="/support"]:hover {
 }
 
 /* ==========================================
+   3-1. 導覽列「活動報名」按鈕優化（主要行動，用醒目綠色實心按鈕凸顯）
+   ========================================== */
+header a[href*="lumifarm-event-checkin"] {
+    background-color: #16a34a !important; /* 醒目綠，與月曆的活動標記色一致 */
+    color: #ffffff !important;
+    padding: 0.4rem 1.2rem !important;
+    border-radius: 99px !important;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 10px rgba(22, 163, 74, 0.35) !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+header a[href*="lumifarm-event-checkin"]:hover {
+    transform: translateY(-2px) !important;
+    opacity: 0.9 !important;
+}
+
+/* ==========================================
    4. 終極移除：消滅文章中間的黑色區塊
    ========================================== */
 /* 這裡使用了精準的 Tailwind 轉義符號，強制擊碎所有 Blowfish 預設的底色 */
