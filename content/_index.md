@@ -30,7 +30,7 @@ cascade:
   </div>
 
   <div style="margin-bottom: 3rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
-    <a href="/events/" style="display: inline-block; background-color: #16a34a; color: white; padding: 14px 36px; border-radius: 99px; text-decoration: none; font-weight: bold; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4); transition: all 0.3s;" onmouseover="this.style.opacity='0.85'; this.style.transform='translateY(-2px)';" onmouseout="this.style.opacity='1'; this.style.transform='translateY(0)';">
+    <a href="https://lumifarm.github.io/lumifarm-event-checkin/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background-color: #16a34a; color: white; padding: 14px 36px; border-radius: 99px; text-decoration: none; font-weight: bold; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4); transition: all 0.3s;" onmouseover="this.style.opacity='0.85'; this.style.transform='translateY(-2px)';" onmouseout="this.style.opacity='1'; this.style.transform='translateY(0)';">
       查看近期活動並報名
     </a>
     <a href="/about" style="display: inline-block; border: 2px solid white; color: white; padding: 12px 36px; border-radius: 99px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: all 0.3s;" onmouseover="this.style.backgroundColor='white'; this.style.color='#0f172a';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white';">
@@ -86,11 +86,6 @@ cascade:
 
 ## 📢 光農快訊
 {{< recent_articles >}}
-
----
-
-## 📅 最新活動
-{{< calendar >}}
 
 ---
 
