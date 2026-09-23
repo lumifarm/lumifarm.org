@@ -61,13 +61,8 @@ theme = 'blowfish'
     weight = 10
 
   [[menu.main]]
-    name = "光農快訊"
-    url = "/news/"    # 👉 換成 url，並加上斜線
-    weight = 15
-
-  [[menu.main]]
     name = "活動報名"
-    url = "https://lumifarm.github.io/lumifarm-event-checkin/"
+    url = "https://checkin.lumifarm.org/"
     weight = 20
 
   [[menu.main]]
@@ -76,18 +71,13 @@ theme = 'blowfish'
     weight = 25
 
   [[menu.main]]
-    name = "活動紀實"
-    pageRef = "/records/"
-    weight = 28
-
-  [[menu.main]]
     name = "永續知識"
     pageRef = "/posts"
     weight = 30
 
   [[menu.main]]
     name = "食農新日常"
-    url = "https://lumifarm.github.io/lumifarm-coop-game/"
+    url = "https://game.lumifarm.org/"
     weight = 35
 
   [[menu.main]]

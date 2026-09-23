@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: darkceller/lumifarm.org # ⚠️ 請確認這是不是您 GitHub 的「帳號/儲存庫名稱」
+  repo: lumifarm/lumifarm.org
   branch: main
   base_url: https://www.lumifarm.org
   auth_endpoint: api/auth
@@ -11,32 +11,6 @@ media_folder: "static/images"
 public_folder: "/images"
 
 collections:
-  - name: "news"
-    label: "📢 光農快訊"
-    folder: "content/news"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    preview_path: "news/{{slug}}"
-    fields:
-      - {label: "標題", name: "title", widget: "string"}
-      - {label: "發布日期", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ"}
-      - {label: "封面圖片", name: "featureimage", widget: "image", required: false}
-      - {label: "摘要簡介 (顯示在首頁卡片)", name: "summary", widget: "text", required: false}
-      - {label: "內文", name: "body", widget: "markdown"}
-
-  - name: "records"
-    label: "📸 活動紀實"
-    folder: "content/records"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    preview_path: "records/{{slug}}"
-    fields:
-      - {label: "活動名稱/標題", name: "title", widget: "string"}
-      - {label: "活動日期", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ"}
-      - {label: "活動照片 (這會變成超美封面圖)", name: "featureimage", widget: "image"}
-      - {label: "活動簡短摘要 (顯示在卡片上)", name: "summary", widget: "text", required: false}
-      - {label: "詳細紀錄內文", name: "body", widget: "markdown"}
-
   - name: "posts"
     label: "📚 知識庫文章"
     folder: "content/posts"

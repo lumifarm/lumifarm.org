@@ -1,5 +1,5 @@
 /* ==========================================
-   0. 自然風配色系統（跟活動報名系統 lumifarm-event-checkin 同一套 token）
+   0. 自然風配色系統（跟活動報名系統 checkin.lumifarm.org 同一套 token）
    木頭棕、葉綠、陽光暖黃、米白，取代原本偏冷的深色森林照片底
    ========================================== */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap");
@@ -120,7 +120,7 @@ header a[href*="/support"]:hover {
 /* ==========================================
    3-2. 導覽列「活動報名」按鈕：漸層綠膠囊，對應報名系統的 .btn-primary
    ========================================== */
-header a[href*="lumifarm-event-checkin"] {
+header a[href*="checkin.lumifarm.org"] {
     background: linear-gradient(135deg, #379654, var(--color-leaf-dark)) !important;
     color: #fffdf7 !important;
     padding: 0.4rem 1.2rem !important;
@@ -130,7 +130,7 @@ header a[href*="lumifarm-event-checkin"] {
     transition: all 0.2s ease-in-out !important;
 }
 
-header a[href*="lumifarm-event-checkin"]:hover {
+header a[href*="checkin.lumifarm.org"]:hover {
     background: linear-gradient(135deg, #45ab63, #276b3a) !important;
     box-shadow: 0 4px 14px rgba(238, 162, 58, 0.45) !important;
     transform: translateY(-2px) !important;
