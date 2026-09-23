@@ -91,6 +91,27 @@ cascade:
 
 </div>
 
+<div style="max-width: 800px; margin: 0 auto 4rem auto; text-align: center;">
+  <div style="font-size: 0.9rem; font-weight: bold; letter-spacing: 0.1em; color: var(--color-leaf); margin-bottom: 0.5rem;">🎫 光農活動報名系統</div>
+  <h2 style="margin: 0 0 1rem 0; padding-bottom: 0;">想參加活動？一個系統搞定報名到報到</h2>
+  <p style="opacity: 0.9; font-size: 1.05rem; line-height: 1.8; max-width: 640px; margin: 0 auto 2rem auto;">不用再私訊詢問還有沒有名額、手動轉帳對帳。我們有一套專屬的線上報名系統，從瀏覽活動、線上報名到現場報到，通通在同一個地方完成。</p>
+
+  <div class="natural-card" style="border-radius: 16px; padding: 2rem; text-align: left; display: inline-block; margin-bottom: 2rem;">
+    <ul style="list-style: none; padding: 0; margin: 0; font-size: 1.05rem;">
+      <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 10px;">✅ <span>瀏覽所有近期活動，隨時看剩餘名額</span></li>
+      <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 10px;">✅ <span>用 Google 帳號登入，報名資料自動帶入不用重複填</span></li>
+      <li style="margin-bottom: 1rem; display: flex; align-items: flex-start; gap: 10px;">✅ <span>報名成功立即拿到專屬 QR Code，現場報到免排隊</span></li>
+      <li style="display: flex; align-items: flex-start; gap: 10px;">✅ <span>換工／志工活動報到後自動累積點數</span></li>
+    </ul>
+  </div>
+
+  <div>
+    <a href="https://checkin.lumifarm.org/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: linear-gradient(135deg, #379654, var(--color-leaf-dark)); color: #fffdf7; padding: 14px 36px; border-radius: 99px; text-decoration: none; font-weight: bold; font-size: 1.1rem; box-shadow: 0 2px 8px rgba(47, 107, 62, 0.35); transition: all 0.3s;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 14px rgba(238, 162, 58, 0.45)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(47, 107, 62, 0.35)';">
+      前往報名系統 →
+    </a>
+  </div>
+</div>
+
 ---
 
 ## 📢 光農電子報精選
